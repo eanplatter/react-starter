@@ -1,0 +1,25 @@
+{
+  "name": "sample",
+  "version": "0.1.0",
+  "description": "boilerplate app",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base public/"
+  },
+  "author": "Ean Platter <eanplatter@gmail.com> (eanplatter.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^1.7.3",
+    "eslint-plugin-mocha": "^1.0.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.0-rc3"
+  },
+  "devDependencies": {
+    "babel-loader": "^5.3.2",
+    "history": "^1.13.0",
+    "redux": "^3.0.4",
+    "webpack": "^1.12.2"
+  }
+}
