@@ -4,7 +4,8 @@
   "description": "boilerplate app",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base public/"
+    "prestart": "webpack",
+    "start": "webpack-dev-server --content-base dist/"
   },
   "author": "Ean Platter <eanplatter@gmail.com> (eanplatter.github.io)",
   "license": "ISC",
@@ -14,11 +15,13 @@
     "react": "^0.14.0",
     "react-dom": "^0.14.2",
     "react-redux": "^4.0.0",
-    "react-router": "^1.0.0-rc3"
+    "react-router": "^1.0.0-rc3",
+    "webpack-dev-server": "^1.12.1"
   },
   "devDependencies": {
     "babel-loader": "^5.3.2",
     "history": "^1.13.0",
+    "html-webpack-plugin": "^1.6.2",
     "redux": "^3.0.4",
     "webpack": "^1.12.2"
   }

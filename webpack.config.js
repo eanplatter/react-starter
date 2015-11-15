@@ -1,9 +1,10 @@
-import path from 'path';
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-export default {
-  entry: ['./app/App.js'],
+module.exports = {
+  entry: './app/App.js',
   output: {
-    filename: 'bundle.js',
+    path: 'dist',
+    filename: 'index_bundle.js',
   },
   module: {
     loaders: [
@@ -14,5 +15,6 @@ export default {
         include: __dirname + '/app'
       },
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin()]
 };
