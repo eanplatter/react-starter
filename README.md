@@ -1,4 +1,5 @@
-# react-starter
+# React Starter
+### A barebones setup for react applications.
 
 1. Clone the repo.
 2. `npm install`
