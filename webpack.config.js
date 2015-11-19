@@ -9,7 +9,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        // compile our code with babel
         test: /\.js$/,
         loaders: ['babel?stage=0'],
         include: __dirname + '/app'
