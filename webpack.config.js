@@ -10,7 +10,10 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel?stage=0'],
+        loader: 'babel',
+        query: {
+          stage: 0
+        },
         include: __dirname + '/app'
       },
     ]
