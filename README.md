@@ -62,9 +62,9 @@ This is where we use the `HTMLWebpackPlugin` to generate an `index.html` file. N
 <hr>
 
 ### NPM scripts (package.json)
-[package.json](https://github.com/eanplatter/react-starter/blob/master/package.json) is where npm modules are listed as dependencies (duh), but also where the webpack start script lives. Rather than using something like [Gulp](http://gulpjs.com/) to keep things simple we will just use npm scripts.
+[package.json](https://github.com/eanplatter/react-starter/blob/master/package.json) is where npm modules are listed as dependencies (duh), but also where the webpack start script lives. Rather than using something like [Gulp](http://gulpjs.com/) we're gonna keep things simple and use npm scripts.
 
-The main thing to note is the scripts. When you run `npm start` it runs the prestart, which runs webpack. Once webpack has finished building all of the code, it runs `webpack-dev-server` with the `dist` directory as the `content-base`, otherwise `webpack-dev-server` would just look for the `index.html` in the root of the project:
+The main thing to note is the scripts property; when you run `npm start` it runs the prestart, which runs webpack. Once webpack has finished building all of the code, it runs `webpack-dev-server` (serving up the files to port 8080) with the `dist` directory as the `content-base`, otherwise `webpack-dev-server` would just look for the `index.html` in the root of the project:
 ``` javascript
   "scripts": {
     "prestart": "webpack",
@@ -95,7 +95,7 @@ Let's look at the file:
 import React, {Component} from 'react';
 import {render} from 'react-dom';
 ```
-These are `ES6` imports and destructuring. Essentially we're getting React and it's Component property from `react`, and a `render` property from something called `react-dom`.
+These are `ES6` imports and destructurings. Essentially we're getting React and it's Component property from `react`, and a `render` property from something called `react-dom`.
 
 ``` javascript
 class App extends Component {
@@ -110,9 +110,11 @@ class App extends Component {
   }
 }
 ```
-This bit is our actual UI. We're using an `ES6` class, but we could also do the same thing with `React.createClass()`. There's plenty of debate on the two, but what's important is that they both have `render` methods which return something called `JSX`. `JSX` is a lot like `HTML` but with some changes.
+This bit is our actual UI. We're using an `ES6` class, but we could also do the same thing with `React.createClass()`. There's plenty of debate on the two, but what's important is that they both have `render` methods which return something called `JSX`. `JSX` is a lot like `HTML` but with a different flavor.
 
 ``` javascript
 render(<App />, document.getElementById('root'));
 ```
 Lastly, this piece is where we use that `render` property found in the `react-dom` library. In our case, this is telling Webpack where to put the `<App />` component we made (when we said `class App extends Component` we were creating a react component that could then be used like an `HTML` element: `<App />`). We're telling react to render our `<App />` inside the element with the ID `root`.
+
+And that's it!
