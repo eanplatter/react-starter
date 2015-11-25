@@ -45,7 +45,7 @@ Once it's grabbed the code, it uses this `output` object to determine where to p
 ```
 Loaders tell webpack what kind of code we'll be writing. If we're writing `ES6`, `ES7`, `React`, or whatever crazy stuff. Webpack goes through and converts files with the type of `.js` loads it through the [Babel](http://babeljs.io/) loader at `stage=0` (`ES7` stuff), and turns it into regular old `ES5`. 
 
-In this isntance we're using the `include` property to tell the loader to only load `.js` files from the `App/` folder.
+In this isntance we're using the `include` property to tell the loader to only load `.js` files from the `app/` folder.
 
 _Note: this is still using Babel v5. Haven't worked up the courage to upgrade to 6 yet. Feel free to make a PR ;)_
 ``` javascript
@@ -74,7 +74,7 @@ The main thing to note is the scripts. When you run `npm start` it runs the pres
 
 <hr>
 
-### Index (App/index.html)
+### Index (app/index.html)
 [index.html](https://github.com/eanplatter/react-starter/blob/master/app/index.html) is the application's main HTML file. You can use it for loading in CDNs, etc.
 
 Also, it's where you'll hook React into the mix. Notice in the file we have a `div` with the `id` of `root`:
@@ -85,7 +85,7 @@ This is where we tell our bundle file to render all of it's code.
 
 <hr>
 
-### React(App/App.js)
+### React(app/App.js)
 [App.js](https://github.com/eanplatter/react-starter/blob/master/app/App.js) is the main file of the application. It's where the React code is injected into the `index.html`.
 
 Let's look at the file:
