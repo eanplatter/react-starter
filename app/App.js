@@ -4,7 +4,7 @@ import {render} from 'react-dom';
 class App extends Component {
   render() {
     return (
-      <div className='ui container'>
+      <div>
         <h1>
           Welcome to the react starter.
         </h1>
