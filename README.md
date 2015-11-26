@@ -1,6 +1,13 @@
 # React Starter
 ### A barebones starter for react applications.
 
+### Table of Contents
+- [Getting Started](https://github.com/eanplatter/react-starter#getting-started)
+- [Webpack](https://github.com/eanplatter/react-starter#webpack-webpackconfigjs)
+- [NPM](https://github.com/eanplatter/react-starter#npm-scripts-packagejson)
+- [HTML](https://github.com/eanplatter/react-starter#index-appindexhtml)
+- [React](https://github.com/eanplatter/react-starter#reactappappjs)
+
 ## Getting Started
 1. Clone the repo.
 2. `npm install`
