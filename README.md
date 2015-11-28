@@ -54,7 +54,6 @@ Loaders tell webpack what kind of code we'll be writing. If we're writing `ES6`,
 
 In this isntance we're using the `include` property to tell the loader to only load `.js` files from the `app/` folder.
 
-_Note: this is still using Babel v5. Haven't worked up the courage to upgrade to 6 yet. Feel free to make a PR ;)_
 ``` javascript
   plugins: [new HtmlWebpackPlugin({
     template: __dirname + '/app/index.html',
