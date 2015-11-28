@@ -55,15 +55,25 @@ Loaders tell webpack what kind of code we'll be writing. If we're writing `ES6`,
 In this isntance we're using the `include` property to tell the loader to only load `.js` files from the `app/` folder.
 
 ``` javascript
-  plugins: [new HtmlWebpackPlugin({
-    template: __dirname + '/app/index.html',
-    hash: true,
-    filename: 'index.html',
-    inject: 'body'
-  })]
-};
+var HTMLWebpackPlugin = new HtmlWebpackPlugin({
+  template: __dirname + '/app/index.html',
+  hash: true,
+  filename: 'index.html',
+  inject: 'body'
+});
 ```
 This is where we use the `HTMLWebpackPlugin` to generate an `index.html` file. Normally one would just keep an `index.html` file in the `dist` directory, but I like to generate it so that everything in the `dist` is 100% generated code.
+
+``` javascript
+var HotReloader = new webpack.HotModuleReplacementPlugin();
+```
+We also need to instantiate an instance of webpack's `HotModuleReplacementPlugin` for live reloading.
+
+We then add both the `HotReloader` and `HTMLWebpackPlugin` to the `plugins` section of the module.
+
+``` javaScript
+ plugins: [HTMLWebpackPlugin, HotReloader]
+```
 
 <hr>
 
