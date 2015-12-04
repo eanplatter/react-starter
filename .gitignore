@@ -1,6 +1,4 @@
 node_modules/
 dist/
-.idea
-.DS_STORE
 bundle.js
 npm-debug.log
