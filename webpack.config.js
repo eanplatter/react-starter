@@ -12,7 +12,7 @@ var HotReloader = new webpack.HotModuleReplacementPlugin();
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
+    'webpack/hot/dev-server',
     './app/App.js'
   ],
   output: {
@@ -28,5 +28,9 @@ module.exports = {
       },
     ]
   },
-  plugins: [HTMLWebpackPlugin, HotReloader]
+  plugins: [HTMLWebpackPlugin, HotReloader],
+  devServer: {
+    contentBase: __dirname + '/dist',
+    hot: true,
+  }
 };
