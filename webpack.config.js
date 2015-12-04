@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var HTMLWebpackPlugin = new HtmlWebpackPlugin({
+var htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   hash: true,
   filename: 'index.html',
@@ -12,7 +12,7 @@ var HotReloader = new webpack.HotModuleReplacementPlugin();
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
+    'webpack/hot/dev-server',
     './app/App.js'
   ],
   output: {
@@ -28,5 +28,9 @@ module.exports = {
       },
     ]
   },
-  plugins: [HTMLWebpackPlugin, HotReloader]
+  plugins: [htmlWebpackPlugin, HotReloader],
+  devServer: {
+    contentBase: __dirname + '/dist',
+    hot: true,
+  }
 };

@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "prestart": "webpack",
-    "start": "webpack-dev-server --content-base dist/"
+    "start": "webpack-dev-server"
   },
   "author": "Ean Platter <eanplatter@gmail.com> (eanplatter.github.io)",
   "license": "ISC",
