@@ -9,10 +9,12 @@
 - [React](https://github.com/eanplatter/react-starter#reactappappjs)
 
 ## Getting Started
-1. Clone the repo.
+1. Clone the repo: `git clone git@github.com:eanplatter/react-starter.git myNewApp`
 2. `npm install`
 3. `npm start`
 4. Navigate to http://localhost:8080/
+
+Also, if you're developing a new application with this, be sure to remove the `.git` folder and reinitialize git.
 
 ## File Information
 
