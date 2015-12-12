@@ -1,5 +1,4 @@
 # React Starter
-### A barebones starter for react applications.
 
 ### Table of Contents
 - [Getting Started](https://github.com/eanplatter/react-starter#getting-started)
