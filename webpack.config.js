@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var HTMLWebpackPlugin = new HtmlWebpackPlugin({
+var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   hash: true,
   filename: 'index.html',
@@ -29,7 +29,7 @@ module.exports = {
       },
     ]
   },
-  plugins: [HTMLWebpackPlugin, HotReloader],
+  plugins: [HTMLWebpackPluginConfig, HotReloader],
   devServer: {
     contentBase: __dirname + '/dist',
     hot: true,
