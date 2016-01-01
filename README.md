@@ -51,9 +51,9 @@ Once it's grabbed the code, it uses this `output` object to determine where to p
     ]
   },
 ```
-Loaders tell webpack what kind of code we'll be writing. If we're writing `ES6`, `ES7`, `React`, or whatever crazy stuff. Webpack goes through and converts files with the type of `.js` loads it through the [Babel](http://babeljs.io/) loader at `stage=0` (`ES7` stuff), and turns it into regular old `ES5`. 
+Loaders tell webpack what kind of code we'll be writing. If we're writing `ES6`, `ES7`, `React`, or whatever crazy stuff. Webpack goes through and converts files with the type of `.js` loads it through the [Babel](http://babeljs.io/) loader at `stage=0` (`ES7` stuff), and turns it into regular old `ES5`.
 
-In this isntance we're using the `include` property to tell the loader to only load `.js` files from the `app/` folder.
+In this instance we're using the `include` property to tell the loader to only load `.js` files from the `app/` folder.
 
 ``` javascript
 var HTMLWebpackPlugin = new HtmlWebpackPlugin({
