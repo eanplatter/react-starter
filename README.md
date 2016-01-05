@@ -1,5 +1,4 @@
 # React Starter
-
 ### Table of Contents
 - [Getting Started](https://github.com/eanplatter/react-starter#getting-started)
 - [Webpack](https://github.com/eanplatter/react-starter#webpack-webpackconfigjs)
@@ -18,6 +17,8 @@ Also, if you're developing a new application with this, be sure to remove the `.
 ## File Information
 
 ### Webpack (webpack.config.js)
+_Note: some of the code describing the webpack config file is out of date._
+
 [webpack.config.js](https://github.com/eanplatter/react-starter/blob/master/webpack.config.js) is where the webpack commands understand what to do. It tells webpack where to find application code, and what to do with it.
 
 Let's disect the file:
