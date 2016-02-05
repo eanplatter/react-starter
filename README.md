@@ -12,8 +12,6 @@
 3. `npm start`
 4. Navigate to `http://localhost:8080/`
 
-Also, if you're developing a new application with this, be sure to remove the `.git` folder and reinitialize git.
-
 ## File Information
 
 ### Webpack (webpack.config.js)
