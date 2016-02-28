@@ -15,7 +15,7 @@
 ## File Information
 
 ### Webpack (webpack.config.js)
-_Note: some of the code describing the webpack config file is out of date._
+>_Note: some of the code describing the webpack config file is out of date._
 
 [webpack.config.js](https://github.com/eanplatter/react-starter/blob/master/webpack.config.js) is where the webpack commands understand what to do. It tells webpack where to find application code, and what to do with it.
 
