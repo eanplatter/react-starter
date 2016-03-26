@@ -131,6 +131,6 @@ This bit is our actual UI. We're using an `ES6` class, but we could also do the 
 ``` javascript
 render(<App />, document.getElementById('root'));
 ```
-Lastly, this piece is where we use that `render` property found in the `react-dom` library. In our case, this is telling Webpack where to put the `<App />` component we made (when we said `class App extends Component` we were creating a react component that could then be used like an `HTML` element: `<App />`). We're telling react to render our `<App />` inside the element with the ID `root`.
+Lastly, this piece is where we use that `render` property found in the `react-dom` library. In our case, this is telling Webpack where to put the `<App />` component we made (when we said `class App extends Component` we were creating a react component that could then be used like an `HTML` element: `<App />`). We're telling react to render our `<App />` inside the element with the ID root.
 
 And that's it!
