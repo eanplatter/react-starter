@@ -19,7 +19,7 @@
 
 [webpack.config.js](https://github.com/eanplatter/react-starter/blob/master/webpack.config.js) is where the webpack commands understand what to do. It tells webpack where to find application code, and what to do with it.
 
-Let's disect the file:
+Let's take a deeper look at the file:
 
 **_webpack.config.js_**
 ``` javascript
