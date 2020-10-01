@@ -1,5 +1,5 @@
 _NOTE: This is super not maintained anymore. If you are interested in getting started with React I recommend using something like [Create-react-app](https://github.com/facebookincubator/create-react-app)_
-# React Starter
+# React Starter the amazing project
 ### Table of Contents
 - [Getting Started](https://github.com/eanplatter/react-starter#getting-started)
 - [Webpack](https://github.com/eanplatter/react-starter#webpack-webpackconfigjs)
